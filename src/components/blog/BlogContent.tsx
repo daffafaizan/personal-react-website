@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 function BlogContent() {
   return (
     <div
-      id="Blog"
+      id="blog"
       className="flex flex-col items-center justify-center h-screen py-20"
     >
       <Title>Blog Under Construction</Title>

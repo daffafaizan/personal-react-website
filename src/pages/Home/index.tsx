@@ -8,6 +8,7 @@ import Socials from "../../components/home/Socials";
 import BlogPreview from "../../components/home/BlogPreview";
 import AboutMe from "../../components/home/AboutMe";
 import AnimatedCursor from "react-animated-cursor";
+import { useEffect } from 'react';
 
 function Home() {
   const navigation = [
@@ -28,6 +29,11 @@ function Home() {
     { name: "Contact", href: "#contact", path: "/contact", current: false },
     { name: "Projects", href: "/projects", path: "/projects", current: false },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] min-h-screen font-inter scroll-smooth">

@@ -3,12 +3,18 @@ import TodolistCards from "../../../components/todolist/TodolistCards";
 import Footer from "../../../components/ui/Footer";
 import Socials from "../../../components/home/Socials";
 import AnimatedCursor from "react-animated-cursor";
+import { useEffect } from 'react';
 
 function Projects() {
   const navigation = [
     { name: "Home", href: "/home", path: "/home", current: false },
     { name: "Projects", href: "/projects", path: "/projects", current: false },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] min-h-screen font-inter scroll-smooth">
       <Sidebar navigation={navigation} />
