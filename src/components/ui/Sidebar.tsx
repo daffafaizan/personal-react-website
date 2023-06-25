@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Squash as Hamburger } from "hamburger-react";
 import { HashLink as Link } from "react-router-hash-link";
 import Dark from "./Dark";
+import AnimatedComponents from "./AnimatedComponents";
 
 function Sidebar({ navigation }) {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -12,7 +13,7 @@ function Sidebar({ navigation }) {
   }
 
   return (
-    <>
+    <AnimatedComponents>
       {showSidebar ? (
         // <Hamburger onToggle={toggled => {
         //     if (toggled) {
@@ -64,7 +65,7 @@ function Sidebar({ navigation }) {
           </div>
         </div>
       </div>
-    </>
+    </AnimatedComponents>
   );
 }
 

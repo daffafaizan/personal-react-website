@@ -1,9 +1,10 @@
+import AnimatedComponents from "../ui/AnimatedComponents";
 import Title from "../utils/Title";
 import { Icon } from "@iconify/react";
 
 function Blog() {
   return (
-    <>
+    <AnimatedComponents>
       <section id="aboutme">
         <div className="flex items-center justify-center flex-col text-center h-screen">
           <Title>About Me Under Construction</Title>
@@ -13,7 +14,7 @@ function Blog() {
           />
         </div>
       </section>
-    </>
+    </AnimatedComponents>
   );
 }
 

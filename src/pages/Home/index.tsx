@@ -9,6 +9,7 @@ import BlogPreview from "../../components/home/BlogPreview";
 import AboutMe from "../../components/home/AboutMe";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect } from 'react';
+import AnimatedPage from "../../components/ui/AnimatedPage";
 
 function Home() {
   const navigation = [
@@ -35,7 +36,7 @@ function Home() {
   }, [])
 
   return (
-    <>
+    <AnimatedPage>
       <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] min-h-screen font-inter scroll-smooth">
         <Sidebar navigation={navigation}/>
         <AnimatedCursor
@@ -65,7 +66,7 @@ function Home() {
           <Footer />
         </div>
       </div>
-    </>
+    </AnimatedPage>
   );
 }
 
