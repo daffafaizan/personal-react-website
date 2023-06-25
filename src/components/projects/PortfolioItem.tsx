@@ -17,7 +17,7 @@ function PortfolioItem({
         href={link}
         target={target}
         rel="noopener noreferrer"
-        className="border-2 dark:border-[#141414] shadow-lg dark:shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-300"
+        className="shadow-lg dark:shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-300"
       >
         <img
           src={imgUrl}
@@ -30,7 +30,7 @@ function PortfolioItem({
           </h3>
           <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
             {stack.map((item) => (
-              <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
+              <span className="inline-block px-2 py-1 font-semibold shadow-lg dark:shadow-stone-950 rounded-md">
                 {item}
               </span>
             ))}
