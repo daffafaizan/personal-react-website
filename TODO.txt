@@ -1,0 +1,6 @@
+Move darkmode button into navbar (DONE)
+Modify navbar buttons
+Fix Navbar
+Make custom cursor (DONE)
+Add Blog section
+Anchorlink not scrolling smoothly
