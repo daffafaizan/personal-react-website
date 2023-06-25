@@ -11,6 +11,10 @@ export default [
     title: "Javascript",
     icon: "skill-icons:javascript",
   },
+  {
+    title: "HTML",
+    icon: "vscode-icons:file-type-html",
+  },
   // {
   //   title: "Kotlin",
   //   icon: "logos:kotlin-icon",
@@ -48,12 +52,8 @@ export default [
     icon: "vscode-icons:file-type-tailwind",
   },
   {
-    title: "HTML",
-    icon: "vscode-icons:file-type-html",
-  },
-  {
-    title: "CSS",
-    icon: "vscode-icons:file-type-css",
+    title: "Bootstrap",
+    icon: "logos:bootstrap",
   },
   {
     title: "Git",

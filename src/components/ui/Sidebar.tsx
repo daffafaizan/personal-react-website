@@ -4,16 +4,8 @@ import { Squash as Hamburger } from "hamburger-react";
 import { HashLink as Link } from "react-router-hash-link";
 import Dark from "./Dark";
 
-function Sidebar() {
+function Sidebar({ navigation }) {
   const [showSidebar, setShowSidebar] = useState(false);
-  const navigation = [
-    { name: "Intro", href: "#intro", current: false },
-    { name: "About Me", href: "#aboutme", current: false },
-    { name: "Technologies", href: "#technologies", current: false },
-    { name: "Experience", href: "#experience", current: false },
-    { name: "Blog", href: "#blog", current: false },
-    { name: "Contact", href: "#contact", current: false },
-  ];
 
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");

@@ -1,4 +1,4 @@
-import Title from "./Title";
+import Title from "../utils/Title";
 
 function Contact() {
   return (

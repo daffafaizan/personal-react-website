@@ -1,6 +1,6 @@
-import experience from "../data/experience";
+import experience from "../../data/experience";
 import ExperienceItem from "./ExperienceItem";
-import Title from "./Title";
+import Title from "../utils/Title";
 
 function Experience() {
   return (
