@@ -1,18 +1,39 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
-function DialogButton({
+function DialogForm({
   ButtonText,
   ButtonTitle,
-  ButtonContent,
   ButtonCloseText,
+  saveTask,
 }: {
   ButtonText: string;
   ButtonTitle: string;
-  ButtonContent: string;
   ButtonCloseText: string;
+  saveTask: (taskObj: any) => void;
 }) {
   let [isOpen, setIsOpen] = useState(false);
+  const [taskName, setTaskName] = useState("");
+  const [description, setDescription] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    if (name === "taskName") {
+      setTaskName(value);
+    } else {
+      setDescription(value);
+    }
+  };
+
+  const handleSave = () => {
+    let taskObj = {};
+    taskObj["Name"] = taskName;
+    taskObj["Description"] = description;
+    saveTask(taskObj);
+    closeModal();
+  };
 
   function closeModal() {
     setIsOpen(false);
@@ -27,7 +48,7 @@ function DialogButton({
         <button
           type="button"
           onClick={openModal}
-          className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
         >
           {ButtonText}
         </button>
@@ -65,15 +86,45 @@ function DialogButton({
                   >
                     {ButtonTitle}
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">{ButtonContent}</p>
+
+                  <button
+                    className="fixed right-0 top-0 text-4xl text-cyan-600 border-cyan-600 hover:scale-110 duration-300 border-2 border-transparent p-4 rounded-full items-center cursor-pointer"
+                    onClick={closeModal}
+                  >
+                    <XMarkIcon className="block h-9 w-9" aria-hidden="true" />
+                  </button>
+                  <div className="mt-2 text-sm text-gray-500">
+                    <form>
+                      <div className="">
+                        <input
+                          type="text"
+                          className="mt-4 shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                          placeholder="Task name"
+                          name="taskName"
+                          value={taskName}
+                          onChange={handleChange}
+                        ></input>
+                      </div>
+                      <div className="">
+                        <textarea
+                          className="shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                          rows={4}
+                          placeholder="Task description"
+                          name="description"
+                          value={description}
+                          onChange={handleChange}
+                        ></textarea>
+                      </div>
+                    </form>
                   </div>
 
                   <div className="mt-4">
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
+                      onClick={() => {
+                        handleSave();
+                      }}
                     >
                       {ButtonCloseText}
                     </button>
@@ -88,4 +139,4 @@ function DialogButton({
   );
 }
 
-export default DialogButton;
+export default DialogForm;

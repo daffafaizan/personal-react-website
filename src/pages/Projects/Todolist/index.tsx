@@ -1,12 +1,10 @@
 import Sidebar from "../../../components/ui/Sidebar";
-import TodolistCards from "../../../components/todolist/TodolistCards";
 import Footer from "../../../components/ui/Footer";
 import Socials from "../../../components/home/Socials";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect } from "react";
 import AnimatedPage from "../../../components/ui/AnimatedPage";
-import TodoList from "../../../components/todolist/TodoList";
-// import { SimpleTodolist } from "../../../components/todolist/SimpleTodolist";
+import { SimpleTodolist } from "../../../components/todolist/SimpleTodolist";
 
 function Projects() {
   const navigation = [
@@ -39,9 +37,7 @@ function Projects() {
           }}
         />
         <div className="max-w-6xl w-11/12 mx-auto">
-          {/* <TodolistCards /> */}
-          {/* <SimpleTodolist /> */}
-          <TodoList />
+          <SimpleTodolist />
           <Socials />
           <Footer />
         </div>

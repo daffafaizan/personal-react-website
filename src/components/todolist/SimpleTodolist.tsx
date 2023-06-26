@@ -9,12 +9,11 @@ interface item {
 }
 
 export const SimpleTodolist: React.FC = () => {
+  const [input, setInput] = useState<string>("");
   const [todos, setTodos] = useState<item[]>([
     { id: 1, text: "Learn Typescript with Daffa", completed: false },
     { id: 2, text: "Build Todo List App", completed: false },
   ]);
-
-  const [input, setInput] = useState<string>("");
 
   const handleToggle = (id: number) => {
     setTodos(
@@ -39,23 +38,26 @@ export const SimpleTodolist: React.FC = () => {
         className="flex flex-col items-center justify-center h-screen py-20"
       >
         <Title>Todo List</Title>
-        <ul>
-          {todos.map((todo) => (
-            <li
-              key={todo.id}
-              onClick={() => handleToggle(todo.id)}
-              style={{
-                textDecoration: todo.completed ? "line-through" : "none",
-              }}
-            >
-              {todo.text}
-            </li>
-          ))}
-        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10">
+          <ul>
+            {todos.map((todo) => (
+              <li
+                key={todo.id}
+                onClick={() => handleToggle(todo.id)}
+                style={{
+                  textDecoration: todo.completed ? "line-through" : "none",
+                }}
+              >
+                {todo.text}
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <input
           type="text"
           placeholder="Add todo item"
-          className="h-2 bg-white border-2 p-5 rounded-md mt-10"
+          className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none"
           onChange={(e) => setInput(e.currentTarget.value)}
         />
         <button

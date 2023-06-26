@@ -29,8 +29,6 @@ function Intro() {
                 1000, // Waits 2s
                 "Tech Enthusiast", // Types 'Three' without deleting 'Two'
                 1000,
-                "Annava's Boyfriend", // Types 'Three' without deleting 'Two'
-                1000,
                 () => {
                   console.log("Sequence completed");
                 },
