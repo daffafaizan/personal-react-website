@@ -17,7 +17,7 @@ function PortfolioItem({
         href={link}
         target={target}
         rel="noopener noreferrer"
-        className="shadow-lg dark:shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-300"
+        className="shadow-lg dark:shadow-lg rounded-xl overflow-hidden hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-300"
       >
         <img
           src={imgUrl}

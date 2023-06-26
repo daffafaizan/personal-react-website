@@ -5,6 +5,8 @@ import Socials from "../../../components/home/Socials";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect } from "react";
 import AnimatedPage from "../../../components/ui/AnimatedPage";
+import TodoList from "../../../components/todolist/TodoList";
+// import { SimpleTodolist } from "../../../components/todolist/SimpleTodolist";
 
 function Projects() {
   const navigation = [
@@ -37,7 +39,9 @@ function Projects() {
           }}
         />
         <div className="max-w-6xl w-11/12 mx-auto">
-          <TodolistCards />
+          {/* <TodolistCards /> */}
+          {/* <SimpleTodolist /> */}
+          <TodoList />
           <Socials />
           <Footer />
         </div>
