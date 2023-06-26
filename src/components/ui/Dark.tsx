@@ -5,12 +5,9 @@ function Dark() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
+    console.log(savedTheme);
     if (savedTheme) {
       setTheme(savedTheme);
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
     }
   }, []);
 
@@ -25,6 +22,7 @@ function Dark() {
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    localStorage.setItem("theme", theme === "dark" ? "light" : "dark");
   };
 
   useEffect(() => {

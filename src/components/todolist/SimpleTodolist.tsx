@@ -17,7 +17,6 @@ export const SimpleTodolist: React.FC = () => {
   ]);
 
   useEffect(() => {
-    console.log(JSON.parse(localStorage.getItem("todos") ?? "{}"));
     const todoItems = JSON.parse(localStorage.getItem("todos") ?? "{}");
     if (todoItems) {
       setTodos(todoItems);
