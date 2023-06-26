@@ -9,7 +9,7 @@ function DialogButton({
 }: {
   ButtonText: string;
   ButtonTitle: string;
-  ButtonContent: string;
+  ButtonContent: any;
   ButtonCloseText: string;
 }) {
   let [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ function DialogButton({
         <button
           type="button"
           onClick={openModal}
-          className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
         >
           {ButtonText}
         </button>
