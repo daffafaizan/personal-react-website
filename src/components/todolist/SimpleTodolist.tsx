@@ -1,6 +1,7 @@
 import AnimatedComponents from "../ui/AnimatedComponents";
 import Title from "../utils/Title";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import TodolistCard from "./TodolistCard";
 
 interface item {
   id: number;
@@ -14,6 +15,14 @@ export const SimpleTodolist: React.FC = () => {
     { id: 1, text: "Learn Typescript with Daffa", completed: false },
     { id: 2, text: "Build Todo List App", completed: false },
   ]);
+
+  useEffect(() => {
+    console.log(JSON.parse(localStorage.getItem("todos") ?? "{}"));
+    const todoItems = JSON.parse(localStorage.getItem("todos") ?? "{}");
+    if (todoItems) {
+      setTodos(todoItems);
+    }
+  }, []);
 
   const handleToggle = (id: number) => {
     setTodos(
@@ -29,6 +38,7 @@ export const SimpleTodolist: React.FC = () => {
   const handleClick = () => {
     const newTodo: item = { id: Date.now(), text: input, completed: false };
     setTodos([...todos, newTodo]);
+    localStorage.setItem("todos", JSON.stringify([...todos, newTodo]));
   };
 
   return (
@@ -39,19 +49,17 @@ export const SimpleTodolist: React.FC = () => {
       >
         <Title>Todo List</Title>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10">
-          <ul>
-            {todos.map((todo) => (
-              <li
-                key={todo.id}
-                onClick={() => handleToggle(todo.id)}
-                style={{
-                  textDecoration: todo.completed ? "line-through" : "none",
-                }}
-              >
-                {todo.text}
-              </li>
-            ))}
-          </ul>
+          {todos.map((todo) => (
+            <li
+              key={todo.id}
+              onClick={() => handleToggle(todo.id)}
+              style={{
+                textDecoration: todo.completed ? "line-through" : "none",
+              }}
+            >
+              {todo.text}
+            </li>
+          ))}
         </div>
 
         <input
