@@ -50,7 +50,7 @@ export const SimpleTodolist: React.FC = () => {
     <AnimatedComponents>
       <div
         id="SimpleTodolist"
-        className="flex flex-col items-center justify-center h-screen py-20"
+        className="flex flex-col items-center justify-center md:h-screen lg:h-screen xl:h-screen py-20"
       >
         <Title>Todo List</Title>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7">
@@ -69,13 +69,18 @@ export const SimpleTodolist: React.FC = () => {
             <TodolistCard text={todo.text}></TodolistCard>
           ))}
         </div>
+        <DialogForm
+          ButtonCloseText="Test"
+          ButtonText="Add"
+          setInput={setInput}
+          handleClick={handleClick}
+        />
         <input
           type="text"
           placeholder="Add todo item"
           className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none text-stone-800"
           onChange={(e) => setInput(e.currentTarget.value)}
         />
-        <DialogForm ButtonCloseText="Test" ButtonText="Add"/>
         <button
           className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
           onClick={handleClick}

@@ -5,9 +5,13 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 function DialogForm({
   ButtonText,
   ButtonCloseText,
+  setInput,
+  handleClick,
 }: {
   ButtonText: string;
   ButtonCloseText: string;
+  setInput: any;
+  handleClick: any;
 }) {
   let [isOpen, setIsOpen] = useState(false);
 
@@ -78,10 +82,10 @@ function DialogForm({
                           placeholder="Task name"
                           name="taskName"
                           // value={}
-                          // onChange={}
+                          onChange={(e) => setInput(e.currentTarget.value)}
                         ></input>
                       </div>
-                      <div className="">
+                      {/* <div className="">
                         <textarea
                           className="shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                           rows={4}
@@ -90,7 +94,7 @@ function DialogForm({
                           // value={}
                           // onChange={}
                         ></textarea>
-                      </div>
+                      </div> */}
                     </form>
                   </div>
 
@@ -98,9 +102,10 @@ function DialogForm({
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      // onClick={() => {
-                      //   handleSave();
-                      // }}
+                      onClick={() => {
+                        handleClick();
+                        closeModal();
+                      }}
                     >
                       {ButtonCloseText}
                     </button>
