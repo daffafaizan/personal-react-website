@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-function AnimatedComponents({ children }) {
+function AnimatedUI({ children }) {
   return (
     <motion.div
-      initial={{ y: 25, opacity: 0 }}
+      initial={{ y: 0, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.2, duration: 1 }}
     >
@@ -12,4 +12,4 @@ function AnimatedComponents({ children }) {
   );
 }
 
-export default AnimatedComponents;
+export default AnimatedUI;

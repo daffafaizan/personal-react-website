@@ -11,7 +11,7 @@ interface item {
   completed: boolean;
 }
 
-export const SimpleTodolist: React.FC = () => {
+function SimpleTodolist() {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [todos, setTodos] = useState<item[]>([
@@ -48,12 +48,6 @@ export const SimpleTodolist: React.FC = () => {
     );
   };
 
-  const handleDelete = (id: number) => {
-    const newTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(newTodos);
-    localStorage.setItem("todos", JSON.stringify(newTodos));
-  };
-
   const handleClick = () => {
     const newTodo: item = {
       id: Date.now(),
@@ -85,8 +79,8 @@ export const SimpleTodolist: React.FC = () => {
           ))}
         </div>
         <DialogForm
-          ButtonCloseText="Test"
-          ButtonText="Add"
+          ButtonCloseText="Add"
+          ButtonText="Add task"
           setTitle={setTitle}
           setContent={setContent}
           handleClick={handleClick}
@@ -95,3 +89,5 @@ export const SimpleTodolist: React.FC = () => {
     </AnimatedComponents>
   );
 };
+
+export default SimpleTodolist;

@@ -4,7 +4,7 @@ import Socials from "../../../components/home/Socials";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect } from "react";
 import AnimatedPage from "../../../components/ui/AnimatedPage";
-import { SimpleTodolist } from "../../../components/todolist/SimpleTodolist";
+import SimpleTodolist from "../../../components/todolist/SimpleTodolist";
 
 function Projects() {
   const navigation = [

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const animations = {
@@ -7,6 +8,9 @@ const animations = {
 };
 
 function AnimatedPage({ children }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <AnimatePresence mode="wait">
       <motion.div

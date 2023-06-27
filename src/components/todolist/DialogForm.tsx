@@ -64,9 +64,9 @@ function DialogForm({
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-lg font-bold leading-6 text-gray-900"
                   >
-                    Add item
+                    New task
                   </Dialog.Title>
 
                   <button
@@ -76,7 +76,7 @@ function DialogForm({
                     <XMarkIcon className="block h-9 w-9" aria-hidden="true" />
                   </button>
 
-                  <div className="mt-5 text-sm text-gray-500">
+                  <div className="mt-6 text-sm text-gray-500">
                     <form>
                       <div className="">
                         <input
@@ -89,7 +89,7 @@ function DialogForm({
                       </div>
                       <div className="">
                         <textarea
-                          className="shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                          className="w-full p-5 mt-3 bg-white border-2 rounded-md focus:shadow-outline focus:outline-none text-stone-800"
                           rows={4}
                           placeholder="Task description"
                           name="description"
@@ -99,7 +99,7 @@ function DialogForm({
                     </form>
                   </div>
 
-                  <div className="mt-4">
+                  <div className="mt-6">
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
