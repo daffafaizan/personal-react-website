@@ -5,12 +5,14 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 function DialogForm({
   ButtonText,
   ButtonCloseText,
-  setInput,
+  setTitle,
+  setContent,
   handleClick,
 }: {
   ButtonText: string;
   ButtonCloseText: string;
-  setInput: any;
+  setTitle: any;
+  setContent: any;
   handleClick: any;
 }) {
   let [isOpen, setIsOpen] = useState(false);
@@ -73,28 +75,26 @@ function DialogForm({
                   >
                     <XMarkIcon className="block h-9 w-9" aria-hidden="true" />
                   </button>
-                  <div className="mt-2 text-sm text-gray-500">
+                  <div className="mt-5 text-sm text-gray-500">
                     <form>
                       <div className="">
                         <input
                           type="text"
-                          className="mt-4 shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                          placeholder="Task name"
+                          className="h-2 w-full p-5 bg-white border-2 rounded-md focus:shadow-outline focus:outline-none text-stone-800"
+                          placeholder="Task title"
                           name="taskName"
-                          // value={}
-                          onChange={(e) => setInput(e.currentTarget.value)}
+                          onChange={(e) => setTitle(e.currentTarget.value)}
                         ></input>
                       </div>
-                      {/* <div className="">
+                      <div className="">
                         <textarea
                           className="shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                           rows={4}
                           placeholder="Task description"
                           name="description"
-                          // value={}
-                          // onChange={}
+                          onChange={(e) => setContent(e.currentTarget.value)}
                         ></textarea>
-                      </div> */}
+                      </div>
                     </form>
                   </div>
 

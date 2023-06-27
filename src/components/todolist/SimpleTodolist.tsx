@@ -6,15 +6,27 @@ import DialogForm from "./DialogForm";
 
 interface item {
   id: number;
-  text: string;
+  title: string;
+  content: string;
   completed: boolean;
 }
 
 export const SimpleTodolist: React.FC = () => {
-  const [input, setInput] = useState<string>("");
+  const [title, setTitle] = useState<string>("");
+  const [content, setContent] = useState<string>("");
   const [todos, setTodos] = useState<item[]>([
-    { id: 1, text: "Learn Typescript with Daffa", completed: false },
-    { id: 2, text: "Build Todo List App", completed: false },
+    {
+      id: 1,
+      title: "Learn Typescript with Daffa",
+      content: "Today I learnt typescript",
+      completed: false,
+    },
+    {
+      id: 2,
+      title: "Build Todo List App",
+      content: "Today I built a Todo List App",
+      completed: false,
+    },
   ]);
 
   useEffect(() => {
@@ -41,7 +53,12 @@ export const SimpleTodolist: React.FC = () => {
   };
 
   const handleClick = () => {
-    const newTodo: item = { id: Date.now(), text: input, completed: false };
+    const newTodo: item = {
+      id: Date.now(),
+      title: title,
+      content: content,
+      completed: false,
+    };
     setTodos([...todos, newTodo]);
     localStorage.setItem("todos", JSON.stringify([...todos, newTodo]));
   };
@@ -62,24 +79,28 @@ export const SimpleTodolist: React.FC = () => {
                 textDecoration: todo.completed ? "line-through" : "none",
               }}
             >
-              {todo.text}
+              {todo.title}
             </li>
           ))}
           {todos.map((todo) => (
-            <TodolistCard text={todo.text}></TodolistCard>
+            <TodolistCard
+              title={todo.title}
+              content={todo.content}
+            ></TodolistCard>
           ))}
         </div>
         <DialogForm
           ButtonCloseText="Test"
           ButtonText="Add"
-          setInput={setInput}
+          setTitle={setTitle}
+          setContent={setContent}
           handleClick={handleClick}
         />
         <input
           type="text"
           placeholder="Add todo item"
           className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none text-stone-800"
-          onChange={(e) => setInput(e.currentTarget.value)}
+          onChange={(e) => setTitle(e.currentTarget.value)}
         />
         <button
           className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
