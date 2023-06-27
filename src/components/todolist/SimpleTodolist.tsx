@@ -74,18 +74,11 @@ export const SimpleTodolist: React.FC = () => {
         <Title>Todo List</Title>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7">
           {todos.map((todo) => (
-            <li
-              onClick={() => handleDelete(todo.id)}
-              style={{
-                textDecoration: todo.completed ? "line-through" : "none",
-              }}
-            >
-              {todo.title}
-            </li>
-          ))}
-          {todos.map((todo) => (
             <TodolistCard
               key={todo.id}
+              todos={todos}
+              setTodos={setTodos}
+              id={todo.id}
               title={todo.title}
               content={todo.content}
             ></TodolistCard>
