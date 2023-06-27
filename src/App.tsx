@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 import NoPage from "./pages/NoPage.tsx";
 import Projects from "./pages/Projects/index.tsx";
 import Todolist from "./pages/Projects/Todolist/index.tsx";
@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Toaster />
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>

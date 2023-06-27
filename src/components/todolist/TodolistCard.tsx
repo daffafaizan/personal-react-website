@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import toast from "react-hot-toast";
 
 function TodolistCard({
   todos,
@@ -17,6 +18,7 @@ function TodolistCard({
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
     localStorage.setItem("todos", JSON.stringify(newTodos));
+    toast.success("Successfully deleted task")
   };
 
   return (

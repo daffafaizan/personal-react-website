@@ -1,6 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import toast from "react-hot-toast";
 
 function DialogForm({
   ButtonText,
@@ -18,6 +19,7 @@ function DialogForm({
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
+    toast.success("Successfully added new task")
     setIsOpen(false);
   }
 
