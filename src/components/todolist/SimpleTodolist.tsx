@@ -34,6 +34,11 @@ export const SimpleTodolist: React.FC = () => {
     );
   };
 
+  const handleDelete = (id: number) => {
+    const newTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(newTodos);
+  };
+
   const handleClick = () => {
     const newTodo: item = { id: Date.now(), text: input, completed: false };
     setTodos([...todos, newTodo]);
@@ -47,11 +52,11 @@ export const SimpleTodolist: React.FC = () => {
         className="flex flex-col items-center justify-center h-screen py-20"
       >
         <Title>Todo List</Title>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7">
           {todos.map((todo) => (
             <li
               key={todo.id}
-              onClick={() => handleToggle(todo.id)}
+              onClick={() => handleDelete(todo.id)}
               style={{
                 textDecoration: todo.completed ? "line-through" : "none",
               }}
@@ -59,12 +64,15 @@ export const SimpleTodolist: React.FC = () => {
               {todo.text}
             </li>
           ))}
+          {todos.map((todo) => (
+            <TodolistCard text={todo.text}></TodolistCard>
+          ))}
         </div>
 
         <input
           type="text"
           placeholder="Add todo item"
-          className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none"
+          className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none text-stone-800"
           onChange={(e) => setInput(e.currentTarget.value)}
         />
         <button
