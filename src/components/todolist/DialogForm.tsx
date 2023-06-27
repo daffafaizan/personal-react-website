@@ -4,36 +4,12 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 function DialogForm({
   ButtonText,
-  ButtonTitle,
   ButtonCloseText,
-  saveTask,
 }: {
   ButtonText: string;
-  ButtonTitle: string;
   ButtonCloseText: string;
-  saveTask: (taskObj: any) => void;
 }) {
   let [isOpen, setIsOpen] = useState(false);
-  const [taskName, setTaskName] = useState("");
-  const [description, setDescription] = useState("");
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    if (name === "taskName") {
-      setTaskName(value);
-    } else {
-      setDescription(value);
-    }
-  };
-
-  const handleSave = () => {
-    let taskObj = {};
-    taskObj["Name"] = taskName;
-    taskObj["Description"] = description;
-    saveTask(taskObj);
-    closeModal();
-  };
 
   function closeModal() {
     setIsOpen(false);
@@ -84,7 +60,7 @@ function DialogForm({
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    {ButtonTitle}
+                    Add item
                   </Dialog.Title>
 
                   <button
@@ -101,8 +77,8 @@ function DialogForm({
                           className="mt-4 shadow-md shadow-stone-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                           placeholder="Task name"
                           name="taskName"
-                          value={taskName}
-                          onChange={handleChange}
+                          // value={}
+                          // onChange={}
                         ></input>
                       </div>
                       <div className="">
@@ -111,8 +87,8 @@ function DialogForm({
                           rows={4}
                           placeholder="Task description"
                           name="description"
-                          value={description}
-                          onChange={handleChange}
+                          // value={}
+                          // onChange={}
                         ></textarea>
                       </div>
                     </form>
@@ -122,9 +98,9 @@ function DialogForm({
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={() => {
-                        handleSave();
-                      }}
+                      // onClick={() => {
+                      //   handleSave();
+                      // }}
                     >
                       {ButtonCloseText}
                     </button>

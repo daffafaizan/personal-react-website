@@ -2,6 +2,7 @@ import AnimatedComponents from "../ui/AnimatedComponents";
 import Title from "../utils/Title";
 import { useState, useEffect } from "react";
 import TodolistCard from "./TodolistCard";
+import DialogForm from "./DialogForm";
 
 interface item {
   id: number;
@@ -68,13 +69,13 @@ export const SimpleTodolist: React.FC = () => {
             <TodolistCard text={todo.text}></TodolistCard>
           ))}
         </div>
-
         <input
           type="text"
           placeholder="Add todo item"
           className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none text-stone-800"
           onChange={(e) => setInput(e.currentTarget.value)}
         />
+        <DialogForm ButtonCloseText="Test" ButtonText="Add"/>
         <button
           className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
           onClick={handleClick}
