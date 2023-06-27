@@ -30,7 +30,7 @@ function DialogForm({
         <button
           type="button"
           onClick={openModal}
-          className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
+          className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-10"
         >
           {ButtonText}
         </button>
@@ -75,6 +75,7 @@ function DialogForm({
                   >
                     <XMarkIcon className="block h-9 w-9" aria-hidden="true" />
                   </button>
+
                   <div className="mt-5 text-sm text-gray-500">
                     <form>
                       <div className="">

@@ -30,6 +30,7 @@ export const SimpleTodolist: React.FC = () => {
   ]);
 
   useEffect(() => {
+    console.log(JSON.parse(localStorage.getItem("todos") ?? "{}"));
     const todoItems = JSON.parse(localStorage.getItem("todos") ?? "{}");
     if (todoItems) {
       setTodos(todoItems);
@@ -50,6 +51,7 @@ export const SimpleTodolist: React.FC = () => {
   const handleDelete = (id: number) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
+    localStorage.setItem("todos", JSON.stringify(newTodos));
   };
 
   const handleClick = () => {
@@ -73,7 +75,6 @@ export const SimpleTodolist: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7">
           {todos.map((todo) => (
             <li
-              key={todo.id}
               onClick={() => handleDelete(todo.id)}
               style={{
                 textDecoration: todo.completed ? "line-through" : "none",
@@ -84,6 +85,7 @@ export const SimpleTodolist: React.FC = () => {
           ))}
           {todos.map((todo) => (
             <TodolistCard
+              key={todo.id}
               title={todo.title}
               content={todo.content}
             ></TodolistCard>
@@ -96,18 +98,6 @@ export const SimpleTodolist: React.FC = () => {
           setContent={setContent}
           handleClick={handleClick}
         />
-        <input
-          type="text"
-          placeholder="Add todo item"
-          className="h-2 bg-white border-2 p-5 rounded-md mt-10 focus:outline-none text-stone-800"
-          onChange={(e) => setTitle(e.currentTarget.value)}
-        />
-        <button
-          className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-900 to-cyan-400 drop-shadow-md hover:scale-110 duration-300 my-5"
-          onClick={handleClick}
-        >
-          Add
-        </button>
       </div>
     </AnimatedComponents>
   );
