@@ -7,18 +7,34 @@ function TodolistCard({
   id,
   title,
   content,
+  completed,
 }: {
   todos: any;
   setTodos: any;
   id: number;
   title: string;
   content: string;
+  completed: boolean;
 }) {
   const handleDelete = (id: number) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
     localStorage.setItem("todos", JSON.stringify(newTodos));
-    toast.success("Successfully deleted task")
+    toast.success("Successfully deleted task");
+  };
+
+  const handleToggle = (id: number) => {
+    setTodos(
+      todos.map((todo) => {
+        if (todo.id === id) {
+          if (completed === false) {
+            toast.success("Task finished!");
+          }
+          return { ...todo, completed: !todo.completed };
+        }
+        return todo;
+      })
+    );
   };
 
   return (
@@ -26,7 +42,11 @@ function TodolistCard({
       <div className="dark:text-white text-stone-900 w-full max-w-md flex flex-col rounded-xl shadow-lg p-4 hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-300">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <div className="rounded-full w-4 h-4 border border-cyan-500 hover:bg-cyan-200"></div>
+            <div
+              className="rounded-full w-4 h-4 border border-cyan-700 hover:scale-110 duration-300"
+              onClick={() => handleToggle(id)}
+              style={{ backgroundColor: completed ? "#0e7490" : "transparent" }}
+            ></div>
             <div className="text-md font-bold">{title}</div>
           </div>
           <div className="flex items-center">

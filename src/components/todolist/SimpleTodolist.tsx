@@ -77,6 +77,7 @@ function SimpleTodolist() {
               id={todo.id}
               title={todo.title}
               content={todo.content}
+              completed={todo.completed}
             ></TodolistCard>
           ))}
         </div>
