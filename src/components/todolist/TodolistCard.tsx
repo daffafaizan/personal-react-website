@@ -24,13 +24,20 @@ function TodolistCard({
   };
 
   const handleToggle = (id: number) => {
-    setTodos(
-      todos.map((todo) => {
+    setTodos((prevTodos: any) =>
+      prevTodos.map((todo: any) => {
         if (todo.id === id) {
-          if (completed === false) {
+          const updatedTodo = { ...todo, completed: !todo.completed };
+          if (updatedTodo.completed) {
             toast.success("Task finished!");
           }
-          return { ...todo, completed: !todo.completed };
+          localStorage.setItem(
+            "todos",
+            JSON.stringify(
+              prevTodos.map((t: any) => (t.id === id ? updatedTodo : t))
+            )
+          );
+          return updatedTodo;
         }
         return todo;
       })
