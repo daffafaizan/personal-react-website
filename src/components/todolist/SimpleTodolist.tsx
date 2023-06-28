@@ -3,6 +3,7 @@ import Title from "../utils/Title";
 import { useState, useEffect } from "react";
 import TodolistCard from "./TodolistCard";
 import DialogForm from "./DialogForm";
+import toast from "react-hot-toast";
 
 interface item {
   id: number;
@@ -30,10 +31,10 @@ function SimpleTodolist() {
   ]);
 
   useEffect(() => {
-    console.log(JSON.parse(localStorage.getItem("todos") ?? "{}"));
-    const todoItems = JSON.parse(localStorage.getItem("todos") ?? "{}");
-    if (todoItems) {
-      setTodos(todoItems);
+    const storedTodos = JSON.parse(localStorage.getItem("todos") || "[]");
+  
+    if (Array.isArray(storedTodos)) {
+      setTodos(storedTodos);
     }
   }, []);
 
@@ -57,6 +58,7 @@ function SimpleTodolist() {
     };
     setTodos([...todos, newTodo]);
     localStorage.setItem("todos", JSON.stringify([...todos, newTodo]));
+    toast.success("Task added!")
   };
 
   return (
