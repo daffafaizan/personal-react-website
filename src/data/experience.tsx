@@ -4,7 +4,7 @@ export default [
     organization: "COMPFEST",
     position: "Technical Committee of Capture the Flag",
     details:
-      "Develop: Helped create a discord bot to announce Capture the Flag related announcements, answer frequently asked questions, and manage members. Part-taken in developing a Capture the Flag platform for the competition and a Hackerclass platform for exclusive cybersecurity classes. Deploy and Manage: Tasked for website deployment of the developed Capture the Flag and Hackerclass platforms and responsible for the maintenance of the deployed bots and platforms.",
+      "Currently learning and developing my skills and knowledge in DevOps.",
   },
   {
     year: "Nov 2022 - Present",
