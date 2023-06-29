@@ -38,17 +38,6 @@ function SimpleTodolist() {
     }
   }, []);
 
-  const handleToggle = (id: number) => {
-    setTodos(
-      todos.map((todo) => {
-        if (todo.id === id) {
-          return { ...todo, completed: !todo.completed };
-        }
-        return todo;
-      })
-    );
-  };
-
   const handleClick = () => {
     const newTodo: item = {
       id: Date.now(),

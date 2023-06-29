@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Squash as Hamburger } from "hamburger-react";
 import { HashLink as Link } from "react-router-hash-link";
 import Dark from "./Dark";
 import AnimatedUI from "./AnimatedUI";
@@ -15,13 +14,6 @@ function Sidebar({ navigation }) {
   return (
     <AnimatedUI>
       {showSidebar ? (
-        // <Hamburger onToggle={toggled => {
-        //     if (toggled) {
-        //         setShowSidebar(!showSidebar)
-        //     } else {
-        //         setShowSidebar(!showSidebar)
-        //     }
-        // }} />
         <button
           className="flex text-4xl text-cyan-600 border-cyan-600 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full items-center cursor-pointer fixed left-10 top-8 xxxs:left-8 xxxs:top-6 z-50"
           onClick={() => setShowSidebar(!showSidebar)}
