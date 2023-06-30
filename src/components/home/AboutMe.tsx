@@ -5,16 +5,22 @@ function Blog() {
   return (
     <AnimatedComponents>
       <section id="aboutme">
-        <div className="flex items-center justify-center flex-col text-center h-screen">
+        <div className="flex items-center justify-center flex-col text-center h-screen mb-10">
           <Title>About Me</Title>
           <h1 className="title text-3xl sm:text-2xl xxs:text-2xl xxxs:text-xl dark:text-white mt-10 font-bold text-justify w-9/12">
-            I was born in Bandung, raised in Cirebon, and currently in Depok pursuing my
-            studies in the University of Indonesia as a computer science major
+            I was born in Bandung, raised in Cirebon, and currently in Depok
+            pursuing my studies in the University of Indonesia as a computer
+            science major
             <span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
-            Motivated by my interests in minimalism, I realized my passion in front-end development. I am currently building my back-end knowledge and combined with my front-end skills, I am working towards becoming a full-stack developer<span className="text-cyan-500 scale-110">.</span>
+            Motivated by my interests in minimalism, I realized my passion in
+            front-end development. I am currently building my back-end knowledge
+            and combined with my front-end skills, I am working towards becoming
+            a full-stack developer
+            <span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
-            In my free time, I like to study, play competitive FPS games, strategy games, and hang out with my friends
+            In my free time, I like to study, play competitive FPS games,
+            strategy games, and hang out with my friends
             <span className="text-cyan-500 scale-110">.</span>
           </h1>
         </div>
