@@ -15,24 +15,24 @@ function Sidebar({ navigation }) {
     <AnimatedUI>
       {showSidebar ? (
         <button
-          className="flex text-4xl text-cyan-600 border-cyan-600 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full items-center cursor-pointer fixed left-10 top-8 xxxs:left-8 xxxs:top-6 z-50"
+          className="flex text-4xl text-cyan-500 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full items-center cursor-pointer fixed left-10 top-8 xxxs:left-8 xxxs:top-6 z-50"
           onClick={() => setShowSidebar(!showSidebar)}
         >
           <XMarkIcon className="block h-12 w-12" aria-hidden="true" />
         </button>
       ) : (
         <button
-          className="fixed text-cyan-600 border-cyan-600 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full z-30 flex items-center cursor-pointer left-10 xxxs:left-8 xxxs:top-6 top-8"
+          className="fixed text-cyan-500 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full z-30 flex items-center cursor-pointer left-10 xxxs:left-8 xxxs:top-6 top-8"
           onClick={() => setShowSidebar(!showSidebar)}
         >
           <Bars3Icon className="block h-12 w-12" aria-hidden="true" />
         </button>
       )}
-      <div className="flex text-4xl text-cyan-600 border-cyan-600 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full items-center cursor-pointer fixed right-7 top-8 xxxs:right-7 xxxs:top-6 z-30">
+      <div className="flex text-4xl text-cyan-500 hover:scale-110 duration-300 border-2 border-transparent p-2 rounded-full items-center cursor-pointer fixed right-7 top-8 xxxs:right-7 xxxs:top-6 z-30">
         <Dark />
       </div>
       <div
-        className={`top-0 right-0 w-[35vw] sm:w-[50vw] xxxs:w-[50vw] xxs:w-[50vw] bg-cyan-700 dark:bg-cyan-800 text-white fixed h-full z-40 ease-in-out duration-300 ${
+        className={`top-0 right-0 w-[35vw] sm:w-[50vw] xxxs:w-[50vw] xxs:w-[50vw] bg-cyan-600 dark:bg-cyan-600 text-white fixed h-full z-40 ease-in-out duration-300 ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >

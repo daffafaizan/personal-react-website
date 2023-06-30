@@ -1,25 +1,21 @@
 import AnimatedComponents from "../ui/AnimatedComponents";
 import Title from "../utils/Title";
-import { Icon } from "@iconify/react";
 
 function Blog() {
   return (
     <AnimatedComponents>
       <section id="aboutme">
         <div className="flex items-center justify-center flex-col text-center h-screen">
-          <Title>About Me Under Construction</Title>
-          <Icon
-            icon="fluent-emoji:construction"
-            className="h-36 w-36 xxs:h-36 xxs:w-36 xxxs:h-36 xxxs:w-36 hover:scale-110 duration-300"
-          />
-          <h1 className="title text-3xl sm:text-2xl xxs:text-2xl xxxs:text-xl dark:text-white mb-10 md:mb-10 font-bold text-justify w-9/12">
-            I was born in Bandung, raised in Cirebon, and currently pursuing my
-            studies in the University of Indonesia as a computer science major.
+          <Title>About Me</Title>
+          <h1 className="title text-3xl sm:text-2xl xxs:text-2xl xxxs:text-xl dark:text-white mt-10 font-bold text-justify w-9/12">
+            I was born in Bandung, raised in Cirebon, and currently in Depok pursuing my
+            studies in the University of Indonesia as a computer science major
+            <span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
-            As a minimalistic
+            Motivated by my interests in minimalism, I realized my passion in front-end development. I am currently building my back-end knowledge and combined with my front-end skills, I am working towards becoming a full-stack developer<span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
-            In my free time, I like to play competitive FPS and strategy games
-            or hang out with my friends.
+            In my free time, I like to study, play competitive FPS games, strategy games, and hang out with my friends
+            <span className="text-cyan-500 scale-110">.</span>
           </h1>
         </div>
       </section>

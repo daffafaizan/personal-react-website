@@ -12,9 +12,13 @@ export default [
     icon: "skill-icons:javascript",
   },
   {
-    title: "HTML",
-    icon: "vscode-icons:file-type-html",
+    title: "Typescript",
+    icon: "skill-icons:typescript",
   },
+  // {
+  //   title: "HTML",
+  //   icon: "vscode-icons:file-type-html",
+  // },
   // {
   //   title: "Kotlin",
   //   icon: "logos:kotlin-icon",

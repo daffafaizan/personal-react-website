@@ -16,16 +16,16 @@ function Intro() {
           />
         </div>
         <h1 className="h-auto mb-6 text-7xl xxs:text-6xl xxxs:text-5xl dark:text-white font-bold">
-          Hi, I'm <span className="text-cyan-500">Daffa</span>
+          Hi, I'm Daffa<span className="text-cyan-500 scale-110">.</span>
         </h1>
-        <p className="text-lg xxs:text-md xxxs:text-md font-medium">
+        <p className="text-lg xxs:text-md xxxs:text-md font-light">
           I'm a{" "}
           <span className="text-cyan-500 font-bold">
             <TypeAnimation
               sequence={[
                 "Computer Science Student", // Types 'One'
                 1000, // Waits 1s
-                "Full-stack Developer", // Deletes 'One' and types 'Two'
+                "Front-end Developer", // Deletes 'One' and types 'Two'
                 1000, // Waits 2s
                 "Tech Enthusiast", // Types 'Three' without deleting 'Two'
                 1000,
@@ -39,21 +39,6 @@ function Intro() {
             />
           </span>
         </p>
-        {/* <p className="text-base mb-3 font-medium">
-        Computer Science Undergraduate TODO
-      </p> */}
-        {/* <p className="text-sm max-w-xl mb-6 font-bold">
-        I am an undergraduate student studying in the University of Indonesia
-        TODO{" "}
-        <a
-          href="https://www.linkedin.com/in/daffa-muhammad-faizan/"
-          target="_blank"
-          className="text-cyan-500 hover:underline underline-offset-2 decoration-2 decoration-red-600"
-          rel="noreferrer noopener"
-        >
-          https://www.linkedin.com/in/daffa-muhammad-faizan/ TODO
-        </a>
-      </p> */}
       </div>
     </AnimatedComponents>
   );
