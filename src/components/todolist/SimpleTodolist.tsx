@@ -41,7 +41,7 @@ function SimpleTodolist() {
     <AnimatedComponents>
       <div
         id="SimpleTodolist"
-        className={`flex flex-col overflow-scroll items-center justify-center py-20 ${
+        className={`flex flex-col items-center justify-center py-20 ${
           todos.length <= 4 ? "h-screen" : "md:h-screen lg:h-screen xl:h-screen"
         }`}
       >
