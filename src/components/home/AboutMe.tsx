@@ -5,9 +5,9 @@ function Blog() {
   return (
     <AnimatedComponents>
       <section id="aboutme">
-        <div className="flex items-center justify-center flex-col text-center h-screen mb-10">
+        <div className="flex items-center justify-center flex-col text-center h-screen my-10">
           <Title>About Me</Title>
-          <h1 className="title text-3xl sm:text-2xl xxs:text-2xl xxxs:text-xl dark:text-white mt-10 font-bold text-justify w-9/12">
+          <h1 className="title text-3xl sm:text-2xl xxs:text-xl xxxs:text-lg dark:text-white mt-10 font-bold text-justify w-9/12">
             I was born in Bandung, raised in Cirebon, and currently in Depok
             pursuing my studies in the University of Indonesia as a computer
             science major
