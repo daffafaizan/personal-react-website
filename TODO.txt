@@ -6,4 +6,4 @@ Add Blog section (DONE)
 Anchorlink not scrolling smoothly (DONE)
 Add animation to components while scrolling
 Finish Blog section
-Save completed state of todo item to localStorage
+Save completed state of todo item to localStorage (DONE)
