@@ -15,24 +15,11 @@ interface item {
 function SimpleTodolist() {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
-  const [todos, setTodos] = useState<item[]>([
-    {
-      id: 1,
-      title: "Learn Typescript with Daffa",
-      content: "Today I learnt typescript",
-      completed: false,
-    },
-    {
-      id: 2,
-      title: "Build Todo List App",
-      content: "Today I built a Todo List App",
-      completed: false,
-    },
-  ]);
+  const [todos, setTodos] = useState<item[]>([]);
 
   useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem("todos") || "[]");
-  
+    const storedTodos = JSON.parse(localStorage.getItem("todos") ?? "[]");
+
     if (Array.isArray(storedTodos)) {
       setTodos(storedTodos);
     }
@@ -47,14 +34,16 @@ function SimpleTodolist() {
     };
     setTodos([...todos, newTodo]);
     localStorage.setItem("todos", JSON.stringify([...todos, newTodo]));
-    toast.success("Task added!")
+    toast.success("Task added!");
   };
 
   return (
     <AnimatedComponents>
       <div
         id="SimpleTodolist"
-        className="flex flex-col items-center justify-center md:h-screen lg:h-screen xl:h-screen py-20"
+        className={`flex flex-col overflow-scroll items-center justify-center py-20 ${
+          todos.length <= 4 ? "h-screen" : "md:h-screen lg:h-screen xl:h-screen"
+        }`}
       >
         <Title>Todo List</Title>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7">
@@ -80,6 +69,6 @@ function SimpleTodolist() {
       </div>
     </AnimatedComponents>
   );
-};
+}
 
 export default SimpleTodolist;
