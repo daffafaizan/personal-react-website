@@ -30,7 +30,7 @@ export default [
     title: "Todolist",
     imgUrl: "assets/todolist.png",
     stack: ["React", "Tailwind", "Vite", "Javascript"],
-    link: "/projects/todolist",
+    link: "https://todolist-by-dmf.netlify.app",
     target: "",
   },
 ];
