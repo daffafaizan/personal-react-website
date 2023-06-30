@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: "Internet Cafe Website",
-    imgUrl: "https://dummyimage.com/600x400/00027d/ffffff.png&text=",
+    imgUrl: "assets/kangwarnet.png",
     stack: ["HTML", "Next.js", "Tailwind", "Spring Boot"],
     link: "https://fe-main-production.up.railway.app/",
     target: "_blank",
@@ -11,7 +11,7 @@ export default [
     id: 2,
     title: "Football Management Website",
     imgUrl:
-      "https://dummyimage.com/600x400/450404/ffffff.png&text=Football+Management",
+      "assets/peminjaman.png",
     stack: ["HTML", "Bootstrap CSS", "Django"],
     link: "https://tk-basdat-production-f697.up.railway.app/trigger1/",
     target: "_blank",
@@ -20,7 +20,7 @@ export default [
     id: 3,
     title: "Personal Portfolio",
     imgUrl:
-      "https://dummyimage.com/600x400/00c7bd/ffffff.png&text=Personal+Portfolio",
+      "assets/Portfolio.png",
     stack: ["React", "Tailwind", "Vite"],
     link: "/home",
     target: "_blank",
@@ -28,7 +28,7 @@ export default [
   {
     id: 4,
     title: "Todolist",
-    imgUrl: "https://dummyimage.com/600x400/e30c0c/e8dfdf&text=Todolist",
+    imgUrl: "assets/todolist.png",
     stack: ["React", "Tailwind", "Vite", "Javascript"],
     link: "/projects/todolist",
     target: "",
