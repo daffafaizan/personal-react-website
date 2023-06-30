@@ -11,7 +11,7 @@ function Intro() {
         <div className="max-w-md mb-20">
           <img
             className="h-96 w-96 xxxs:h-80 xxxs:w-80 rounded-full shadow-lg hover:shadow-cyan-200 hover:scale-105 duration-300"
-            src="src\assets\daffasand.jpg"
+            src="\assets\daffasand.jpg"
             alt=""
           />
         </div>
