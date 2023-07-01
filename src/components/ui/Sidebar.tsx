@@ -11,6 +11,12 @@ function Sidebar({ navigation }) {
     return classes.filter(Boolean).join(" ");
   }
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
   return (
     <AnimatedUI>
       {showSidebar ? (
@@ -42,6 +48,7 @@ function Sidebar({ navigation }) {
               <Link
                 key={item.name}
                 to={item.href}
+                scroll={el => scrollWithOffset(el)}
                 smooth
                 className={classNames(
                   item.current
