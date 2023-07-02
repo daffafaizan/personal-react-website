@@ -4,7 +4,6 @@ import Footer from "../../components/ui/Footer";
 import Socials from "../../components/home/Socials";
 import { useEffect } from "react";
 import AnimatedPage from "../../components/ui/AnimatedPage";
-import CustomCursor from "../../components/ui/CustomCursor";
 
 function Projects() {
   const navigation = [
@@ -20,7 +19,6 @@ function Projects() {
     <AnimatedPage>
       <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] min-h-screen font-inter scroll-smooth">
         <Sidebar navigation={navigation} />
-        <CustomCursor />
         <div className="max-w-6xl w-11/12 mx-auto">
           <Portfolio />
           <Socials />
