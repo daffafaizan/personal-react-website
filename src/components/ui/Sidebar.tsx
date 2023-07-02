@@ -42,7 +42,18 @@ function Sidebar({ navigation }) {
               <Link
                 key={item.name}
                 to={item.href}
-                smooth
+                scroll={(el) => {
+                  if (item.name === "Experience") {
+                    el.scrollIntoView({
+                      behavior: "smooth",
+                    });
+                  } else {
+                    el.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                  }
+                }}
                 className={classNames(
                   item.current
                     ? "bg-cyan-900 shadow-lg dark:shadow-lg hover:scale-110 duration-300 rounded-md text-white"
