@@ -6,7 +6,7 @@ import AnimatedComponents from "../ui/AnimatedComponents";
 function Experience() {
   return (
     <AnimatedComponents>
-      <section id="experience">
+      <section id="experience" className="scroll-m-10">
         <div className="flex flex-col md:flex-row items-center justify-center my-32">
           <div className="w-full md:w-11/12">
             <Title>Experience</Title>
