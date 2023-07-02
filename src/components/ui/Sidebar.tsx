@@ -11,12 +11,6 @@ function Sidebar({ navigation }) {
     return classes.filter(Boolean).join(" ");
   }
 
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80; 
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-}
-
   return (
     <AnimatedUI>
       {showSidebar ? (
@@ -48,8 +42,18 @@ function Sidebar({ navigation }) {
               <Link
                 key={item.name}
                 to={item.href}
-                scroll={el => scrollWithOffset(el)}
-                smooth
+                scroll={(el) => {
+                  if (item.name === "Experience") {
+                    el.scrollIntoView({
+                      behavior: "smooth",
+                    });
+                  } else {
+                    el.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                  }
+                }}
                 className={classNames(
                   item.current
                     ? "bg-cyan-900 shadow-lg dark:shadow-lg hover:scale-110 duration-300 rounded-md text-white"
