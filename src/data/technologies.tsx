@@ -48,7 +48,7 @@ export default [
   //   icon: "vscode-icons:file-type-flutter",
   // },
   {
-    title: "Postgre SQL",
+    title: "Postgres",
     icon: "logos:postgresql",
   },
   {

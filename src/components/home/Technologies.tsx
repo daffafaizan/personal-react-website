@@ -8,7 +8,7 @@ function Technologies() {
     <AnimatedComponents>
       <div
         id="technologies"
-        className="h-screen flex flex-col items-center justify-center"
+        className="my-96 md:my-52 sm:my-52 xxs:my-52 xxxs:my-52  flex flex-col items-center justify-center"
       >
         <Title>Technologies I've used</Title>
         <div className="flex flex-col md:flex-row items-center justify-center">
