@@ -1,15 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import { useState } from "react";
 import NoPage from "./pages/NoPage.tsx";
 import Projects from "./pages/Projects/index.tsx";
 import Todolist from "./pages/Projects/Todolist/index.tsx";
 import Home from "./pages/Home/index.tsx";
 import Blog from "./pages/Blog/index.tsx";
+import CustomCursor from "./components/ui/CustomCursor.tsx";
 
 function App() {
+  const [enableCursor, setEnableCursor] = useState("true");
   return (
     <>
       <BrowserRouter>
+        {enableCursor == "true" ? <CustomCursor /> : <></>}
         <Toaster />
         <Routes>
           <Route index element={<Home />}></Route>
