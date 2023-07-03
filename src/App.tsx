@@ -10,7 +10,7 @@ import CustomCursor from "./components/ui/CustomCursor.tsx";
 function App() {
   return (
     <BrowserRouter>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Toaster />
       <Routes>
         <Route index element={<Home />}></Route>
