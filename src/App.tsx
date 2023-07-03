@@ -5,12 +5,10 @@ import Projects from "./pages/Projects/index.tsx";
 import Todolist from "./pages/Projects/Todolist/index.tsx";
 import Home from "./pages/Home/index.tsx";
 import Blog from "./pages/Blog/index.tsx";
-import CustomCursor from "./components/ui/CustomCursor.tsx";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <CustomCursor /> */}
       <Toaster />
       <Routes>
         <Route index element={<Home />}></Route>
