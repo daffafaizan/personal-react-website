@@ -12,7 +12,7 @@ export default [
     title: "Football Management Website",
     imgUrl:
       "assets/peminjaman.png",
-    stack: ["HTML", "Bootstrap CSS", "Django"],
+    stack: ["HTML", "Bootstrap", "Django"],
     link: "https://tk-basdat-production-f697.up.railway.app/trigger1/",
     target: "_blank",
   },
@@ -21,7 +21,7 @@ export default [
     title: "Personal Portfolio",
     imgUrl:
       "assets/Portfolio.png",
-    stack: ["React", "Tailwind", "Vite"],
+    stack: ["Typescript", "HTML", "React", "Tailwind", "Vite"],
     link: "/home",
     target: "_blank",
   },
@@ -29,7 +29,7 @@ export default [
     id: 4,
     title: "Todolist",
     imgUrl: "assets/todolist.png",
-    stack: ["React", "Tailwind", "Vite", "Javascript"],
+    stack: ["Typescript", "HTML", "React", "Tailwind", "Vite" ],
     link: "https://todolist-by-dmf.netlify.app",
     target: "",
   },
