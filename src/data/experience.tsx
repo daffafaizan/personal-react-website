@@ -1,5 +1,12 @@
 export default [
   {
+    year: "Jul 2023 - Present",
+    organization: "Peduly",
+    position: "Front End Web Developer Intern",
+    details:
+      "Create and maintain websites using Tailwind CSS and React. Find solutions for existing problems and improve features on websites. Collaborate, learn, and develop as an intern.",
+  },
+  {
     year: "Apr 2023 - Present",
     organization: "COMPFEST",
     position: "Technical Committee of Capture the Flag",
