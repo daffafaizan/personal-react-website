@@ -31,11 +31,11 @@ function PortfolioItem({
             {title}
           </h3>
           {status == "ONLINE" ? (
-            <span className="inline-block bg-green-400 px-2 py-1 mb-2 md:mb-3 mt-2 md:mt-3 font-semibold  dark:shadow-stone-950 rounded-md">
+            <span className="inline-block border-2 border-green-500 text-green-500 dark:border-[#39FF14] dark:text-[#39FF14] px-2 py-1 mb-3 md:mb-4 mt-2 md:mt-3 font-semibold text-sm dark:shadow-stone-950 rounded-md">
               {status}
             </span>
           ) : (
-            <span className="inline-block bg-red-400 px-2 py-1 mb-2 md:mb-3 mt-2 md:mt-3 font-semibold  dark:shadow-stone-950 rounded-md">
+            <span className="inline-block border-2 border-[#FF3131] text-[#FF3131] px-2 py-1 mb-3 md:mb-4 mt-2 md:mt-3 font-semibold text-sm dark:shadow-stone-950 rounded-md">
               {status}
             </span>
           )}
