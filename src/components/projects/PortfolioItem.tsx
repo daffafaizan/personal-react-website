@@ -1,11 +1,13 @@
 function PortfolioItem({
   title,
+  status,
   imgUrl,
   stack,
   link,
   target,
 }: {
   title: string;
+  status: string;
   imgUrl: string;
   stack: string[];
   link: string;
@@ -25,9 +27,18 @@ function PortfolioItem({
           className="w-full h-36 md:h-48 object-cover cursor-pointer"
         />
         <div className="w-full p-4">
-          <h3 className="text-lg md:text-xl dark:text-stone-300 mb-2 md:mb-3 font-semibold ">
+          <h3 className="text-lg md:text-xl dark:text-stone-300 font-semibold ">
             {title}
           </h3>
+          {status == "ONLINE" ? (
+            <span className="inline-block bg-green-400 px-2 py-1 mb-2 md:mb-3 mt-2 md:mt-3 font-semibold  dark:shadow-stone-950 rounded-md">
+              {status}
+            </span>
+          ) : (
+            <span className="inline-block bg-red-400 px-2 py-1 mb-2 md:mb-3 mt-2 md:mt-3 font-semibold  dark:shadow-stone-950 rounded-md">
+              {status}
+            </span>
+          )}
           <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
             {stack.map((item) => (
               <span
