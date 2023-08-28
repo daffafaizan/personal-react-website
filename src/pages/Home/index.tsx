@@ -9,6 +9,7 @@ import BlogPreview from "../../components/home/BlogPreview";
 import AboutMe from "../../components/home/AboutMe";
 import { useEffect } from "react";
 import AnimatedPage from "../../components/ui/AnimatedPage";
+import Projects from "../../components/home/Projects";
 
 function Home() {
   const navigation = [
@@ -30,6 +31,14 @@ function Home() {
       current: false,
     },
     {
+      name: "Projects",
+      href: "#projects",
+      path: "/projects",
+      target: "",
+      rel: "",
+      current: false,
+    },
+    {
       name: "Blog",
       href: "#blog",
       path: "/blog",
@@ -41,14 +50,6 @@ function Home() {
       name: "Contact",
       href: "#contact",
       path: "/contact",
-      target: "",
-      rel: "",
-      current: false,
-    },
-    {
-      name: "Projects",
-      href: "/projects",
-      path: "/projects",
       target: "",
       rel: "",
       current: false,
@@ -76,6 +77,7 @@ function Home() {
           <AboutMe />
           <Technologies />
           <Experience />
+          <Projects />
           <BlogPreview />
           <Contact />
           <Socials />
