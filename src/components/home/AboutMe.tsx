@@ -19,8 +19,7 @@ function Blog() {
             a full-stack developer
             <span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
-            In my free time, I like to study, play competitive FPS games,
-            strategy games, and hang out with my friends
+            In my free time, I like to study, code, and hang out with my friends
             <span className="text-cyan-500 scale-110">.</span>
           </h1>
         </div>
