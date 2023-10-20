@@ -6,7 +6,7 @@ import AnimatedComponents from "../ui/AnimatedComponents";
 function BlogPreview() {
   let navigate = useNavigate();
   const routeChange = () => {
-    let path = "/blog";
+    let path = "/home";
     navigate(path);
   };
 
