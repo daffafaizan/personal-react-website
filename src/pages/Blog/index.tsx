@@ -8,7 +8,6 @@ import AnimatedPage from "../../components/ui/AnimatedPage";
 function Blog() {
   const navigation = [
     { name: "Home", href: "/home", path: "/home", current: false },
-    { name: "Projects", href: "/projects", path: "/projects", current: false },
   ];
 
   useEffect(() => {
