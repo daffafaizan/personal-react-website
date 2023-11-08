@@ -11,7 +11,7 @@ const socialLinks = [
   {
     id: 2,
     icon: <FiFileText />,
-    url: "https://drive.google.com/file/d/12bfznmnWqVq9LEMElrD7AK4q2UO7lFtR/view?usp=share_link",
+    url: "https://drive.google.com/file/d/17XsIEPFMMEW7wAP-wDWGhTHzDahhNqR4/view?usp=sharing",
   },
   {
     id: 3,

@@ -15,7 +15,7 @@ export default [
     status: "ONLINE",
     imgUrl: "assets/todolistBaru.png",
     stack: ["React", "Vite", "Typescript", "Tailwind", "HTML"],
-    link: "https://todolist-by-dmf.netlify.app",
+    link: "https://todolist.daffafaizan.com",
     target: "_blank",
   },
   {
@@ -24,7 +24,7 @@ export default [
     status: "ONLINE",
     imgUrl: "assets/pomotimer.png",
     stack: ["React", "Next.js", "Typescript", "Tailwind", "HTML"],
-    link: "https://pomotimer-by-dmf.netlify.app",
+    link: "https://pomotimer.daffafaizan.com",
     target: "_blank",
   },
 ];
