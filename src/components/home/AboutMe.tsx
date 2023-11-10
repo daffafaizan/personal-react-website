@@ -19,7 +19,7 @@ function Blog() {
             a full-stack developer
             <span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
-            In my free time, I like to study, code, and hang out with my friends
+            In my free time, I like to study, code, and read
             <span className="text-cyan-500 scale-110">.</span>
           </h1>
         </div>
