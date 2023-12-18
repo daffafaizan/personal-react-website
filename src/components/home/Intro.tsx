@@ -10,7 +10,7 @@ function Intro() {
       >
         <div className="max-w-md mb-20">
           <img
-            className="h-96 w-96 xxxs:h-80 xxxs:w-80 border-2 dark:border-none rounded-full shadow-lg hover:shadow-cyan-200 hover:scale-105 duration-150"
+            className="h-96 w-96 xxxs:h-80 xxxs:w-80 dark:border-none rounded-full shadow-lg hover:shadow-cyan-200 hover:scale-105 duration-150"
             src="\assets\new_pp_large.jpg"
             alt=""
           />
