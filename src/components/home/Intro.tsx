@@ -10,8 +10,8 @@ function Intro() {
       >
         <div className="max-w-md mb-20">
           <img
-            className="h-96 w-96 xxxs:h-80 xxxs:w-80 rounded-full shadow-lg hover:shadow-cyan-200 hover:scale-105 duration-300"
-            src="\assets\daffasand.jpg"
+            className="h-96 w-96 xxxs:h-80 xxxs:w-80 border-2 dark:border-none rounded-full shadow-lg hover:shadow-cyan-200 hover:scale-105 duration-150"
+            src="\assets\new_pp_large.jpg"
             alt=""
           />
         </div>
@@ -23,9 +23,9 @@ function Intro() {
           <span className="text-cyan-500 font-bold">
             <TypeAnimation
               sequence={[
-                "Computer Science Student", // Types 'One'
+                "Computer Science Undergraduate", // Types 'One'
                 1000, // Waits 1s
-                "Front-end Developer", // Deletes 'One' and types 'Two'
+                "Software Engineer", // Deletes 'One' and types 'Two'
                 1000, // Waits 2s
                 "Tech Enthusiast", // Types 'Three' without deleting 'Two'
                 1000,

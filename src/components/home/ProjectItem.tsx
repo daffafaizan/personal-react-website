@@ -20,7 +20,7 @@ function ProjectItems
         href={link}
         target={target}
         rel="noopener noreferrer"
-        className="shadow-lg dark:shadow-lg rounded-xl overflow-hidden hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-300"
+        className="shadow-lg border-2 dark:border-[#141414] dark:shadow-lg rounded-xl overflow-hidden hover:scale-105 hover:shadow-cyan-200 hover:dark:shadow-cyan-400 duration-150"
       >
         <img
           src={imgUrl}

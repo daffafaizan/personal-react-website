@@ -9,8 +9,8 @@ function Blog() {
           <Title>About Me</Title>
           <h1 className="title text-3xl sm:text-2xl xxs:text-xl xxxs:text-lg dark:text-white mt-10 font-bold text-justify w-9/12">
             I was born in Bandung, raised in Cirebon, and currently in Depok
-            pursuing my studies in the University of Indonesia as a computer
-            science major
+            pursuing my studies at the University of Indonesia as a computer
+            science undergraduate
             <span className="text-cyan-500 scale-110">.</span>
             <p className="my-6" />
             Motivated by my interests in minimalism, I realized my passion in

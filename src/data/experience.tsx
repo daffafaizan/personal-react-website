@@ -1,20 +1,20 @@
 export default [
   {
-    year: "Jul 2023 - Present",
+    year: "Jul 2023 - Oct 2023",
     organization: "Peduly",
     position: "Front End Web Developer Intern",
     details:
       "Create and maintain websites using Tailwind CSS and React. Find solutions for existing problems and improve features on websites. Collaborate, learn, and develop as an intern.",
   },
   {
-    year: "Apr 2023 - Present",
+    year: "Apr 2023 - Oct 2023",
     organization: "COMPFEST",
     position: "Technical Committee of Capture the Flag",
     details:
       "Currently learning and developing my skills and knowledge in DevOps.",
   },
   {
-    year: "Nov 2022 - Present",
+    year: "Nov 2022 - Jul 2023",
     organization: "Google Developer Students Club UI",
     position: "Super Member of Web Development",
     details:
@@ -28,7 +28,7 @@ export default [
       "Assisting the Project Officer: Worked closely with the project officer in their duties such as maintaining project progress, ensuring the realization of project concepts, and coordinating project activities. Communicating with Stakeholders: Ensure the stakeholders are up-to-date with the latest progress and possible changes of the project. Managing Project Resources and Activities: Ensure that personnel, utilities, and finances are utilized efficiently and effectively. Initiated activities and meetings to discuss the goals and objectives of the project.",
   },
   {
-    year: "Mar 2023 - Present",
+    year: "Mar 2023 - Jun 2023",
     organization: "PERAK Fasilkom",
     position: "Human Resources of Competitive Games",
     details:

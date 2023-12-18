@@ -17,7 +17,7 @@ function BlogPreview() {
           <Title>Blog Under Construction</Title>
           <Icon
             icon="fluent-emoji:construction"
-            className="h-36 w-36 xxs:h-36 xxs:w-36 xxxs:h-36 xxxs:w-36 hover:scale-110 duration-300"
+            className="h-36 w-36 xxs:h-36 xxs:w-36 xxxs:h-36 xxxs:w-36 hover:scale-110 duration-150"
             onClick={routeChange}
           />
         </div>

@@ -11,7 +11,7 @@ const socialLinks = [
   {
     id: 2,
     icon: <FiFileText />,
-    url: "https://drive.google.com/file/d/17XsIEPFMMEW7wAP-wDWGhTHzDahhNqR4/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1iOyLoNplNzh-0nkCNLPin7bVb7ba6fQV/view?usp=sharing",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ function Socials() {
                 href={link.url}
                 target="__blank"
                 key={link.id}
-                className="text-cyan-600 dark:text-stone-900 hover:text-stone-200 dark:hover:text-cyan-600 cursor-pointer rounded-xl bg-gray-50 dark:bg-[#F4F5F0] hover:bg-cyan-600 dark:hover:bg-stone-800 shadow-sm p-8 xxxs:p-6 hover:scale-110 duration-300"
+                className="text-cyan-600 dark:text-stone-900 hover:text-stone-200 dark:hover:text-cyan-600 cursor-pointer rounded-xl bg-gray-50 dark:bg-[#F4F5F0] hover:bg-cyan-600 dark:hover:bg-stone-800 shadow-sm p-8 xxxs:p-6 hover:scale-105 duration-150"
               >
                 <i className="text-3xl sm:text-xl md:text-2xl xxs:text-xl xxxs:text-xl">
                   {link.icon}
