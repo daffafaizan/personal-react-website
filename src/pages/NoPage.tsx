@@ -1,9 +1,9 @@
-import Sidebar from "../components/ui/sidebar";
+import Sidebar from "../components/ui/sections/sidebar";
 import { useEffect } from "react";
-import AnimatedPage from "../components/ui/AnimatedPage";
+import AnimatedPage from "../components/ui/animations/AnimatedPage";
 import Error404 from "../components/nopage/error";
 
-function Blog() {
+function NoPage() {
   const navigation = [
     { name: "Home", href: "/home", path: "/home", current: false },
     { name: "Projects", href: "/projects", path: "/projects", current: false },
@@ -25,4 +25,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default NoPage;

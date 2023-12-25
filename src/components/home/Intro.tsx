@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import AnimatedComponents from "../ui/AnimatedComponents";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function Intro() {
   return (

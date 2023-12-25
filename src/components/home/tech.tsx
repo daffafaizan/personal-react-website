@@ -1,7 +1,7 @@
 import TechnologyItem from "./techs";
 import technologies from "../../data/technologies";
-import Title from "../utils/title";
-import AnimatedComponents from "../ui/AnimatedComponents";
+import Title from "../ui/utils/title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function Technologies() {
   return (

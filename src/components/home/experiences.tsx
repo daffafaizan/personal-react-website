@@ -1,7 +1,7 @@
 import experience from "../../data/experience";
 import ExperienceItem from "./experience";
-import Title from "../utils/title";
-import AnimatedComponents from "../ui/AnimatedComponents";
+import Title from "../ui/utils/title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function Experience() {
   return (

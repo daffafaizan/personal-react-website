@@ -1,9 +1,9 @@
-import Sidebar from "../../components/ui/sidebar";
-import Footer from "../../components/ui/footer";
+import Sidebar from "../../components/ui/sections/sidebar";
+import Footer from "../../components/ui/sections/footer";
 import Socials from "../../components/home/socials";
 import BlogContent from "../../components/blog/BlogContent";
 import { useEffect } from "react";
-import AnimatedPage from "../../components/ui/AnimatedPage";
+import AnimatedPage from "../../components/ui/animations/AnimatedPage";
 
 function Blog() {
   const navigation = [

@@ -1,5 +1,5 @@
-import AnimatedComponents from "../ui/AnimatedComponents";
-import Title from "../utils/title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
+import Title from "../ui/utils/title";
 import { Icon } from "@iconify/react";
 
 function BlogContent() {

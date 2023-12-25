@@ -1,7 +1,7 @@
-import Title from "../utils/title";
+import Title from "../ui/utils/title";
 import { Icon } from "@iconify/react";
 import { useNavigate } from "react-router-dom";
-import AnimatedComponents from "../ui/AnimatedComponents";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function BlogPreview() {
   let navigate = useNavigate();
