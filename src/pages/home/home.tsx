@@ -1,15 +1,15 @@
-import Contact from "../../components/home/Contact";
-import Footer from "../../components/ui/Footer";
-import Intro from "../../components/home/Intro";
-import Experience from "../../components/home/Experience";
-import Sidebar from "../../components/ui/Sidebar";
-import Technologies from "../../components/home/Technologies";
-import Socials from "../../components/home/Socials";
-import BlogPreview from "../../components/home/BlogPreview";
-import AboutMe from "../../components/home/AboutMe";
+import Contact from "../../components/home/contact";
+import Footer from "../../components/ui/sections/footer";
+import Intro from "../../components/home/intro";
+import Experience from "../../components/home/experiences";
+import Sidebar from "../../components/ui/sections/sidebar";
+import Technologies from "../../components/home/techs";
+import Socials from "../../components/home/socials";
+import BlogPreview from "../../components/home/blog";
+import AboutMe from "../../components/home/aboutme";
 import { useEffect } from "react";
-import AnimatedPage from "../../components/ui/AnimatedPage";
-import Projects from "../../components/home/Projects";
+import AnimatedPage from "../../components/ui/animations/AnimatedPage";
+import Projects from "../../components/home/projects";
 
 function Home() {
   const navigation = [
@@ -70,7 +70,7 @@ function Home() {
 
   return (
     <AnimatedPage>
-      <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] min-h-screen font-inter scroll-smooth">
+      <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] font-inter scroll-smooth">
         <Sidebar navigation={navigation} />
         <div className="max-w-6xl w-11/12 mx-auto">
           <Intro />

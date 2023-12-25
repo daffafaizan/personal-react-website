@@ -1,5 +1,5 @@
-import AnimatedComponents from "../ui/AnimatedComponents";
-import Title from "../utils/Title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
+import Title from "../ui/utils/title";
 import { Icon } from "@iconify/react";
 
 function Error404() {
@@ -7,7 +7,7 @@ function Error404() {
     <AnimatedComponents>
       <div
         id="blog"
-        className="flex flex-col items-center justify-center h-screen py-20"
+        className="flex flex-col items-center justify-center min-h-screen py-20"
       >
         <Title>Error 404</Title>
         <Icon

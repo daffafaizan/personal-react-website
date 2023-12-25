@@ -1,12 +1,12 @@
-import AnimatedComponents from "../ui/AnimatedComponents";
-import Title from "../utils/Title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
+import Title from "../ui/utils/title";
 
 function Contact() {
   return (
     <AnimatedComponents>
       <div
         id="contact"
-        className="flex flex-col justify-center mx-auto h-screen"
+        className="min-h-screen flex flex-col justify-center mx-auto"
       >
         <div className="flex justify-center items-center">
           <form

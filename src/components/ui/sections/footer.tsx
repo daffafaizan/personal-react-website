@@ -1,4 +1,4 @@
-import AnimatedComponents from "./AnimatedComponents";
+import AnimatedComponents from "../animations/AnimatedComponents";
 
 function Footer() {
   return (

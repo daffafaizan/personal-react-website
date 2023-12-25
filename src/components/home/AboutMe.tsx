@@ -1,11 +1,11 @@
-import AnimatedComponents from "../ui/AnimatedComponents";
-import Title from "../utils/Title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
+import Title from "../ui/utils/title";
 
 function Blog() {
   return (
     <AnimatedComponents>
       <section id="aboutme">
-        <div className="flex items-center justify-center flex-col text-center my-32">
+        <div className="min-h-screen flex items-center justify-center flex-col text-center my-32">
           <Title>About Me</Title>
           <h1 className="title text-3xl sm:text-2xl xxs:text-xl xxxs:text-lg dark:text-white mt-10 font-bold text-justify w-9/12">
             I was born in Bandung, raised in Cirebon, and currently in Depok
