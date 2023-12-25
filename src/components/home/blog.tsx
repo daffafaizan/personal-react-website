@@ -13,7 +13,7 @@ function BlogPreview() {
   return (
     <AnimatedComponents>
       <section id="blog">
-        <div className="flex items-center justify-center flex-col text-center h-screen">
+        <div className="min-h-screen flex items-center justify-center flex-col text-center h-screen">
           <Title>Blog Under Construction</Title>
           <Icon
             icon="fluent-emoji:construction"

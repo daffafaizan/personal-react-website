@@ -7,7 +7,7 @@ function Error404() {
     <AnimatedComponents>
       <div
         id="blog"
-        className="flex flex-col items-center justify-center h-screen py-20"
+        className="flex flex-col items-center justify-center min-h-screen py-20"
       >
         <Title>Error 404</Title>
         <Icon

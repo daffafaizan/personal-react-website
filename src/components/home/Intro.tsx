@@ -6,7 +6,7 @@ function Intro() {
     <AnimatedComponents>
       <div
         id="intro"
-        className="flex items-center justify-center flex-col text-center h-screen"
+        className="min-h-screen flex items-center justify-center flex-col text-center"
       >
         <div className="max-w-md mb-20">
           <img

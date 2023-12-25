@@ -6,7 +6,7 @@ function Contact() {
     <AnimatedComponents>
       <div
         id="contact"
-        className="flex flex-col justify-center mx-auto h-screen"
+        className="min-h-screen flex flex-col justify-center mx-auto"
       >
         <div className="flex justify-center items-center">
           <form
