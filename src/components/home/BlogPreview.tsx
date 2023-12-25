@@ -1,4 +1,4 @@
-import Title from "../utils/Title";
+import Title from "../utils/title";
 import { Icon } from "@iconify/react";
 import { useNavigate } from "react-router-dom";
 import AnimatedComponents from "../ui/AnimatedComponents";

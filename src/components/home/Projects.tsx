@@ -1,7 +1,7 @@
 import portfolio from "../../data/portfolio";
-import Title from "../utils/Title";
+import Title from "../utils/title";
 import AnimatedComponents from "../ui/AnimatedComponents";
-import ProjectItem from "./ProjectItem";
+import ProjectItem from "./project";
 
 function Projects() {
   return (

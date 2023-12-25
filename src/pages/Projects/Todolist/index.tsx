@@ -1,9 +1,9 @@
-import Sidebar from "../../../components/ui/Sidebar";
-import Footer from "../../../components/ui/Footer";
-import Socials from "../../../components/home/Socials";
+import Sidebar from "../../../components/ui/sidebar";
+import Footer from "../../../components/ui/footer";
+import Socials from "../../../components/home/socials";
 import { useEffect } from "react";
 import AnimatedPage from "../../../components/ui/AnimatedPage";
-import SimpleTodolist from "../../../components/todolist/SimpleTodolist";
+import SimpleTodolist from "../../../components/todolist/todolist";
 
 function Projects() {
   const navigation = [

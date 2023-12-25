@@ -1,7 +1,7 @@
-import Sidebar from "../../components/ui/Sidebar";
-import Portfolio from "../../components/projects/Portfolio";
-import Footer from "../../components/ui/Footer";
-import Socials from "../../components/home/Socials";
+import Sidebar from "../../components/ui/sidebar";
+import Portfolio from "../../components/projects/portfolio";
+import Footer from "../../components/ui/footer";
+import Socials from "../../components/home/socials";
 import { useEffect } from "react";
 import AnimatedPage from "../../components/ui/AnimatedPage";
 

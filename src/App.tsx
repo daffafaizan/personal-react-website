@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import NoPage from "./pages/NoPage.tsx";
-import Projects from "./pages/Projects/index.tsx";
-import Todolist from "./pages/Projects/Todolist/index.tsx";
-import Home from "./pages/Home/index.tsx";
-import Blog from "./pages/Blog/index.tsx";
+import NoPage from "./pages/nopage.tsx";
+import Projects from "./pages/projects/index.tsx";
+import Todolist from "./pages/projects/todolist/index.tsx";
+import Home from "./pages/home/home.tsx";
+import Blog from "./pages/blog/blog.tsx";
 
 function App() {
   return (

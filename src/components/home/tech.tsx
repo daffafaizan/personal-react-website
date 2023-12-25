@@ -1,6 +1,6 @@
-import TechnologyItem from "./TechnologyItem";
+import TechnologyItem from "./techs";
 import technologies from "../../data/technologies";
-import Title from "../utils/Title";
+import Title from "../utils/title";
 import AnimatedComponents from "../ui/AnimatedComponents";
 
 function Technologies() {

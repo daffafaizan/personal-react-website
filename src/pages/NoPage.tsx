@@ -1,7 +1,7 @@
-import Sidebar from "../components/ui/Sidebar";
+import Sidebar from "../components/ui/sidebar";
 import { useEffect } from "react";
 import AnimatedPage from "../components/ui/AnimatedPage";
-import Error404 from "../components/nopage/Error404";
+import Error404 from "../components/nopage/error";
 
 function Blog() {
   const navigation = [

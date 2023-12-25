@@ -1,6 +1,6 @@
-import PortfolioItem from "./PortfolioItem";
+import PortfolioItem from "./portfolioitem";
 import portfolio from "../../data/portfolio";
-import Title from "../utils/Title";
+import Title from "../utils/title";
 import AnimatedComponents from "../ui/AnimatedComponents";
 
 function Portfolio() {

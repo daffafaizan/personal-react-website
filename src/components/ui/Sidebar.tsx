@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { HashLink as Link } from "react-router-hash-link";
-import Dark from "./Dark";
+import Dark from "./dark";
 import AnimatedUI from "./AnimatedUI";
 
 function Sidebar({ navigation }) {

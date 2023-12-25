@@ -1,5 +1,5 @@
 import AnimatedComponents from "../ui/AnimatedComponents";
-import Title from "../utils/Title";
+import Title from "../utils/title";
 
 function Contact() {
   return (
