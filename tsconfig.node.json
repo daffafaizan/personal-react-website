@@ -5,7 +5,8 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "outDir": "./dist"
   },
-  "include": ["vite.config.ts", "src/**/*.tsx"]
+  "include": ["vite.config.ts"]
 }
