@@ -1,5 +1,5 @@
 import experience from "../../data/experience";
-import ExperienceItem from "./experience";
+import ExperienceItem from "./experience.tsx";
 import Title from "../ui/utils/title";
 import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
