@@ -1,7 +1,7 @@
 import AnimatedComponents from "../ui/animations/AnimatedComponents";
 import Title from "../ui/utils/title";
 
-function Blog() {
+function AboutMe() {
   return (
     <AnimatedComponents>
       <section id="aboutme">
@@ -28,4 +28,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default AboutMe;

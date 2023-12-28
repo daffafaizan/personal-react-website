@@ -1,15 +1,17 @@
-import Contact from "../../components/home/contact";
-import Footer from "../../components/ui/sections/footer";
-import Intro from "../../components/home/intro";
-import Experience from "../../components/home/experiences";
-import Sidebar from "../../components/ui/sections/sidebar";
-import Technologies from "../../components/home/techs";
-import Socials from "../../components/home/socials";
-import BlogPreview from "../../components/home/blog";
-import AboutMe from "../../components/home/aboutme";
 import { useEffect } from "react";
 import AnimatedPage from "../../components/ui/animations/AnimatedPage";
-import Projects from "../../components/home/projects";
+import Sidebar from "../../components/ui/sections/sidebar";
+import Intro from "../../components/home/Intro";
+import AboutMe from "../../components/home/AboutMe";
+import Technologies from "../../components/home/techs";
+import Experience from "../../components/home/experiences";
+import Projects from "../../components/home/Projects";
+import BlogPreview from "../../components/home/blog";
+import Contact from "../../components/home/Contact";
+import Socials from "../../components/home/Socials";
+import Footer from "../../components/ui/sections/footer";
+
+
 
 function Home() {
   const navigation = [
