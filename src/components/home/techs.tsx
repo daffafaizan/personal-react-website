@@ -1,14 +1,14 @@
-import TechnologyItem from "./TechnologyItem";
+import TechnologyItem from "./tech";
 import technologies from "../../data/technologies";
-import Title from "../utils/Title";
-import AnimatedComponents from "../ui/AnimatedComponents";
+import Title from "../ui/utils/title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function Technologies() {
   return (
     <AnimatedComponents>
       <div
         id="technologies"
-        className="my-96 md:my-52 sm:my-52 xxs:my-52 xxxs:my-52  flex flex-col items-center justify-center"
+        className="min-h-screen my-96 md:my-52 sm:my-52 xxs:my-52 xxxs:my-52 flex flex-col items-center justify-center"
       >
         <Title>Technologies I've used</Title>
         <div className="flex flex-col md:flex-row items-center justify-center">

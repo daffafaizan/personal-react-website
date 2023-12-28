@@ -1,12 +1,12 @@
-import portfolio from "../../data/portfolio";
-import Title from "../utils/Title";
-import AnimatedComponents from "../ui/AnimatedComponents";
-import ProjectItem from "./ProjectItem";
+import portfolio from "../../data/projects";
+import Title from "../ui/utils/title";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
+import ProjectItem from "./project";
 
 function Projects() {
   return (
     <AnimatedComponents>
-      <section id="projects" className="scroll-m-10">
+      <section id="projects" className="min-h-screen scroll-m-10">
         <Title>Projects</Title>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10">
           {portfolio.map((project) => (

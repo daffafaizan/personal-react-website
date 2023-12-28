@@ -1,9 +1,9 @@
-import Sidebar from "../../components/ui/Sidebar";
-import Footer from "../../components/ui/Footer";
-import Socials from "../../components/home/Socials";
+import Sidebar from "../../components/ui/sections/sidebar";
+import Footer from "../../components/ui/sections/footer";
+import Socials from "../../components/home/socials";
 import BlogContent from "../../components/blog/BlogContent";
 import { useEffect } from "react";
-import AnimatedPage from "../../components/ui/AnimatedPage";
+import AnimatedPage from "../../components/ui/animations/AnimatedPage";
 
 function Blog() {
   const navigation = [
@@ -16,7 +16,7 @@ function Blog() {
 
   return (
     <AnimatedPage>
-      <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] min-h-screen font-inter scroll-smooth">
+      <div className="bg-[#F4F5F0] dark:bg-[#171717] text-stone-900 dark:text-[#EDEDED] font-inter scroll-smooth">
         <Sidebar navigation={navigation} />
         <div className="max-w-6xl w-11/12 mx-auto">
           <BlogContent />

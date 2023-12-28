@@ -1,7 +1,7 @@
-import Title from "../utils/Title";
+import Title from "../ui/utils/title";
 import { Icon } from "@iconify/react";
 import { useNavigate } from "react-router-dom";
-import AnimatedComponents from "../ui/AnimatedComponents";
+import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function BlogPreview() {
   let navigate = useNavigate();
@@ -13,7 +13,7 @@ function BlogPreview() {
   return (
     <AnimatedComponents>
       <section id="blog">
-        <div className="flex items-center justify-center flex-col text-center h-screen">
+        <div className="min-h-screen flex items-center justify-center flex-col text-center h-screen">
           <Title>Blog Under Construction</Title>
           <Icon
             icon="fluent-emoji:construction"
