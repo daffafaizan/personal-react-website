@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import NoPage from "./pages/nopage.tsx";
+import NoPage from "./pages/NoPage.tsx";
 import Home from "./pages/home/home.tsx";
 import Blog from "./pages/blog/blog.tsx";
 
