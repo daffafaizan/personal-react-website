@@ -1,5 +1,4 @@
-function ProjectItems
-({
+function ProjectItems({
   title,
   status,
   imgUrl,
@@ -56,5 +55,4 @@ function ProjectItems
   );
 }
 
-export default ProjectItems
-;
+export default ProjectItems;

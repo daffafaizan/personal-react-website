@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import AnimatedComponents from "../ui/animations/AnimatedComponents";
 
 function BlogPreview() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const routeChange = () => {
-    let path = "/home";
+    const path = "/home";
     navigate(path);
   };
 
