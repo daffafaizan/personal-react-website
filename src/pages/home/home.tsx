@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import AnimatedPage from "../../components/ui/animations/AnimatedPage";
 import Sidebar from "../../components/ui/sections/sidebar";
-import Intro from "../../components/home/intro";
-import AboutMe from "../../components/home/aboutme";
-import Technologies from "../../components/home/techs";
-import Experience from "../../components/home/experiences";
-import Projects from "../../components/home/projects";
-import BlogPreview from "../../components/home/blog";
-import Contact from "../../components/home/contact";
-import Socials from "../../components/home/socials";
+import Intro from "../../components/main/intro";
+import AboutMe from "../../components/main/aboutme";
+import Technologies from "../../components/main/techs";
+import Experience from "../../components/main/experiences";
+import Projects from "../../components/main/projects";
+import BlogPreview from "../../components/main/blog";
+import Contact from "../../components/main/contact";
+import Socials from "../../components/main/socials";
 import Footer from "../../components/ui/sections/footer";
 
 function Home() {
